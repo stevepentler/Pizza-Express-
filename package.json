@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/stevepentler/Pizza-Express/issues"
   },
-  "homepage": "https://github.com/stevepentler/Pizza-Express#readme"
+  "homepage": "https://github.com/stevepentler/Pizza-Express#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
