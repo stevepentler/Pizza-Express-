@@ -1,7 +1,7 @@
-
 const assert = require('assert');
 const request = require('request');
 const app = require('../server');
+const fixtures = require('./fixtures');
 
 describe('Server', () => {
 
@@ -59,18 +59,12 @@ describe('Server', () => {
       this.request.post('/pizzas', (error, response) => {
         if (error) { done(error); }
         assert.notEqual(response.statusCode, 404);
-        assert.equal(response.statusCode, 201);
         done();
       });
     });
 
     it('should receive and store data', (done) => {
-      var validPizza = {
-        pizza: {
-          name: 'A vegan pizza',
-          toppings: [ 'mushrooms', 'onions', 'garlic', 'black olives' ]
-        }
-      };
+      var payload = { pizza: fixtures.validPizza};
 
       this.request.post('/pizzas', { form: validPizza }, (error, response) => {
         if (error) { done(error); }
