@@ -5,7 +5,7 @@ app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Pizza Steve Express';
 
 app.get('/', (request, response) => {
-  response.send('HI PIZZA STEVE');
+  response.send(app.locals.title);
 });
 
 if (!module.parent) {
