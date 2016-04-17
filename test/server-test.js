@@ -1,9 +1,11 @@
+
 const assert = require('assert');
-const app = require('../server');
 const request = require('request');
+const app = require('../server');
 
 describe('Server', () => {
-  before(done => {
+
+  before((done) => {
     this.port = 9876;
 
     this.server = app.listen(this.port, (err, result) => {
@@ -25,8 +27,9 @@ describe('Server', () => {
   });
 
   describe('GET /', () => {
+
     it('should return a 200', (done) => {
-      request.get('/', (error, response) => {
+      this.request.get('/', (error, response) => {
         if (error) { done(error); }
         assert.equal(response.statusCode, 200);
         done();
@@ -43,10 +46,6 @@ describe('Server', () => {
         done();
       });
     });
-
-
-
-
 
   });
 

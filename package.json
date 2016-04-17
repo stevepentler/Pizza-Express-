@@ -2,10 +2,9 @@
   "name": "pizza-steve-express",
   "version": "1.0.0",
   "description": "Express Tutorial",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,11 +17,14 @@
   },
   "homepage": "https://github.com/stevepentler/Pizza-Express#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "hbs": "^4.0.0",
+    "pryjs": "^0.1.3"
   },
   "devDependencies": {
-    "express": "^4.13.4",
-    "mocha": "^2.4.5"
+    "mocha": "^2.3.3",
+    "request": "^2.72.0"
   },
   "keywords": [
     "express",
