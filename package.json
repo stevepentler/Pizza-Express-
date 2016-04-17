@@ -1,17 +1,18 @@
 {
-  "name": "pizza-express",
+  "name": "pizza-steve-express",
   "version": "1.0.0",
   "description": "Express Tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stevepentler/Pizza-Express.git"
   },
   "author": "Steve Pentler",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stevepentler/Pizza-Express/issues"
   },
@@ -21,5 +22,9 @@
   },
   "devDependencies": {
     "mocha": "^2.4.5"
-  }
+  },
+  "keywords": [
+    "express",
+    "pizza"
+  ]
 }
