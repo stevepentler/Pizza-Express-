@@ -1,4 +1,4 @@
 exports.validPizza = {
   name: 'A vegan pizza',
-  toppings: [ 'mushrooms', 'onions', 'garlic', 'black olives' ]
+  toppings: [ 'mushrooms', 'bloody socks', 'pineapple' ]
 };
